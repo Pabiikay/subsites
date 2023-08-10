@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/nobody-empty-call-center-workstation-with-computers-audio-instruments-no-people-customer-service-office-desks-with-telecommunications-technology-offering-helpline-assistance.jpg);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu-bar{
+    background: gray;
+    text-align: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    margin-right: 70px;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.active, .menu-bar ul li:hover{
+    background: black;
+    border-radius: 3px;
+}
+
+.active, .menu-bar ul li a:hover{
+    color: white;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: gray;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: #D3D3D3;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    mix-blend-mode: multiply;
+}
+

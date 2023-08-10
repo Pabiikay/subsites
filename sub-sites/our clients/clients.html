@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clients</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+
+    <!--Clients slider section-->
+    <section id="clients">
+        <div class="clients container">
+            <div class="slider">
+                <h2> <span>Our</span> <span>Clients</span>  </h2>
+                <section class="customer-logo slider">
+                    <div class="slide"><img src="img/Coca-Cola_logo.svg.png" alt=""></div>
+                    <div class="slide"><img src="img/gdhs logo.png" alt=""></div>
+                    <div class="slide"><img src="img/idc-logo-400.png" alt=""></div>
+                    <div class="slide"><img src="img/nwdesd logo.png" alt=""></div>
+                    <div class="slide"><img src="img/Prasa_logo.svg.png" alt=""></div>
+                    <div class="slide"><img src="img/revlon-logo.png" alt=""></div>
+                    <div class="slide"><img src="img/Tshwane_CoA.png" alt=""></div>
+                    <div class="slide"><img src="img/nampak-logo.png" alt=""></div>
+                    <div class="slide"><img src="img/Rheinmetall_Algeria-Logo.wine.png" alt=""></div>
+                    <div class="slide"><img src="img/sun international.jpg" alt=""></div>
+                    <div class="slide"><img src="img/isover-vector-logo.png" alt=""></div>
+                </section>
+            </div>   
+        </div> 
+    </section>
+    <!--End Clients slider section-->
+    <!--Clients slider script-->
+    <script>
+        $(document).ready(function(){
+            $('.customer-logo').slick({
+                slidesToShow:5,
+                slidesToScroll:1,
+                autoplay: true,
+                autoplaySpeed:1500,
+                arrows:false,
+                dots:false,
+                pauseOnHover:false,
+                responsive:[{
+                    breakpoint:520,
+                    setting:{
+                        slidesToShow:3
+                    }
+                }]
+            });
+        });
+    </script>
+    <!--End clients slider script-->
+
+</body>
+</html>
